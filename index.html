@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kendo date and  time picker</title>
+  <link rel="stylesheet" href="css/kendo.common.min.css">
+  <link rel="stylesheet" href="css/kendo.default.min.css">
+<!--   <link rel="stylesheet" href="css/kendo.dataviz.default.min.css">
+<link rel="stylesheet" href="css/kendo.dataviz.mobile.min.css"> -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/kendo.datetimepicker.min.js"></script>
+  <script src="js/kendo.ui.core.min.js"></script>
+
+ <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.default.min.css" rel="stylesheet" />
+
+  
+</head>
+<body>
+  <div id="example">
+              <div id="to-do">
+                      <input id="datetimepicker" />
+              </div>
+          <script>
+              $(document).ready(function () {
+                  // create DateTimePicker from input HTML element
+                  $("#datetimepicker").kendoDateTimePicker({
+                      value:new Date()
+                  });
+              });
+          </script>
+          <style>
+              #to-do {
+                  height: 52px;
+                  width: 221px;
+                  margin: 30px auto;
+                  padding: 91px 0 0 188px;
+                  background: url('../content/web/datepicker/todo.png') transparent no-repeat 0 0;
+              }
+              #to-do .k-datetimepicker {
+                  width: 200px;
+              }
+              html.k-material #to-do {
+                  height: 55px;
+                  width: 260px;
+                  padding: 87px 0 0 150px;
+              }
+              html.k-material #to-do .k-datetimepicker {
+                  width: 240px;
+              }
+          </style>
+          </div>
+
+</body>
+
+</html>
